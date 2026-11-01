@@ -1,0 +1,75 @@
+{
+  "sample_counts": {
+    "train": 12378,
+    "validation": 6240,
+    "test": 5064
+  },
+  "rr": {
+    "2.0": {
+      "validation_threshold": 0.49000000000000027,
+      "validation_2025": {
+        "trades": 25,
+        "wins": 4,
+        "losses": 21,
+        "win_rate": 0.16,
+        "net_r": -13.0,
+        "profit_factor": 0.381,
+        "mean_model_score": 0.5183
+      },
+      "out_of_sample_2026": {
+        "trades": 10,
+        "wins": 3,
+        "losses": 7,
+        "win_rate": 0.3,
+        "net_r": -1.0,
+        "profit_factor": 0.857,
+        "mean_model_score": 0.5234
+      }
+    },
+    "2.5": {
+      "validation_threshold": 0.45000000000000023,
+      "validation_2025": {
+        "trades": 21,
+        "wins": 5,
+        "losses": 16,
+        "win_rate": 0.2381,
+        "net_r": -3.5,
+        "profit_factor": 0.781,
+        "mean_model_score": 0.4727
+      },
+      "out_of_sample_2026": {
+        "trades": 8,
+        "wins": 3,
+        "losses": 5,
+        "win_rate": 0.375,
+        "net_r": 2.5,
+        "profit_factor": 1.5,
+        "mean_model_score": 0.4761
+      }
+    },
+    "3.0": {
+      "validation_threshold": 0.38000000000000017,
+      "validation_2025": {
+        "trades": 32,
+        "wins": 8,
+        "losses": 24,
+        "win_rate": 0.25,
+        "net_r": 0.0,
+        "profit_factor": 1.0,
+        "mean_model_score": 0.4073
+      },
+      "out_of_sample_2026": {
+        "trades": 27,
+        "wins": 8,
+        "losses": 19,
+        "win_rate": 0.2963,
+        "net_r": 5.0,
+        "profit_factor": 1.263,
+        "mean_model_score": 0.4106
+      }
+    }
+  },
+  "selected_rr_from_2025_validation": 3.0,
+  "selected_threshold": 0.38000000000000017,
+  "note": "OOS test metrics use models trained through 2024. Deployment model is then refit on all available history."
+}
